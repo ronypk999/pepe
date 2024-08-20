@@ -35,6 +35,9 @@
   font-family: Arial, Helvetica, sans-serif;
   @apply text-white;
 }
+body {
+  @apply bg-[#4F9843];
+}
 .font1 {
   font-family: "font1";
 }
@@ -60,3 +63,14 @@
 .text-stroke {
   -webkit-text-stroke: 1px black; /* Stroke size and color */
 }
+
+/*divider css */
+.svg {
+  width: calc(100% + 1.3px);
+  height: 13px;
+}
+
+.shape-fill {
+  fill: #fff;
+}
+/*divider css end */

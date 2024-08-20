@@ -18,124 +18,136 @@ import okx from "../../../assets/banner/exchanges/A60595EC12C04739-removebg-prev
 import coinbaseEx from "../../../assets/banner/exchanges/coinbase-coin-logo-C86F46D7B8-seeklogo_com.webp";
 import kucoin from "../../../assets/banner/exchanges/kucoin-logo.webp";
 import uniswapEx from "../../../assets/banner/exchanges/Uniswap_Logo_svg.webp";
+import Divider from "../Divider";
 
 const Banner: React.FC = () => {
   return (
     <>
-      <div className="p-6 md:p-12 max-w-[1200px] mx-auto">
-        <div className="flex justify-center md:p-12 py-12">
-          <div className="space-y-12">
-            <div className="max-w-xl space-y-8 text-center md:text-start">
-              <h1 className="font4 text-7xl text-stroke">$pepe</h1>
-              <p className="text-3xl font6">
-                The most memeable memecoin in existence. The dogs have had their
-                day, it’s time for Pepe to take reign.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <div className="flex gap-6 flex-wrap justify-center">
-                <a href="#">
-                  <img src={twitter} alt="twitter" />
-                </a>
-                <a href="#">
-                  <img src={telegram} alt="telegram" />
-                </a>
-                <a href="#">
-                  <img src={dextools} alt="dextools" />
-                </a>
+      <div
+        className=""
+        style={{
+          backgroundImage: `url(${pepeCow})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="p-6 md:p-12 max-w-[1200px] mx-auto lg:pt-24">
+          <div className="flex justify-center md:p-12 py-12 lg:pt-12">
+            <div className="space-y-12">
+              <div className="max-w-2xl space-y-8 text-center md:text-start">
+                <h1 className="font4 text-7xl text-stroke">$pepe</h1>
+                <p className="text-xl md:text-3xl font6">
+                  The most memeable memecoin in existence. The dogs have had
+                  their day, it’s time for Pepe to take reign.
+                </p>
               </div>
-              <div className="flex gap-6 flex-wrap justify-center">
-                <a href="#">
-                  <img src={etherscan} alt="etherscan" />
-                </a>
-                <a href="#">
-                  <img src={cmc} alt="coinmarketcap" />
-                </a>
-                <a href="#">
-                  <img src={uniswap} alt="uniswap" />
-                </a>
+              <div className="flex flex-col sm:flex-row justify-center gap-6 lg:pt-12">
+                <div className="flex gap-6 flex-wrap justify-center">
+                  <a href="#">
+                    <img src={twitter} alt="twitter" />
+                  </a>
+                  <a href="#">
+                    <img src={telegram} alt="telegram" />
+                  </a>
+                  <a href="#">
+                    <img src={dextools} alt="dextools" />
+                  </a>
+                </div>
+                <div className="flex gap-6 flex-wrap justify-center">
+                  <a href="#">
+                    <img src={etherscan} alt="etherscan" />
+                  </a>
+                  <a href="#">
+                    <img src={cmc} alt="coinmarketcap" />
+                  </a>
+                  <a href="#">
+                    <img src={uniswap} alt="uniswap" />
+                  </a>
+                </div>
               </div>
             </div>
+            <div className="hidden md:block">
+              <img src={pepe} alt="pepe" className="w-[500px]" />
+            </div>
           </div>
-          <div className="hidden md:block">
-            <img src={pepe} alt="pepe" className="w-[500px]" />
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="space-y-6 flex-1">
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">Gemini</span>
+                <img src={gemini} alt="gemini" className="w-8" />
+              </a>
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">binance</span>
+                <img src={binance} alt="binance" className="w-8" />
+              </a>
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">crypto.com</span>
+                <img src={crypto} alt="crypto.com" className="w-8" />
+              </a>
+            </div>
+            <div className="space-y-6 flex-1">
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">htx</span>
+                <img src={htx} alt="htx" className="w-8" />
+              </a>
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">bybit</span>
+                <img src={bybit} alt="bybit" className="w-8" />
+              </a>
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">okx</span>
+                <img src={okx} alt="okx" className="w-8" />
+              </a>
+            </div>
+            <div className="space-y-6 flex-1">
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">cb wallet</span>
+                <img src={coinbaseEx} alt="coinbase" className="w-8" />
+              </a>
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">kucoin</span>
+                <img src={kucoin} alt="kucoin" className="w-8" />
+              </a>
+              <a
+                href="#"
+                className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
+              >
+                <span className="font5 text-xl flex-1">uniswap</span>
+                <img src={uniswapEx} alt="uniswap" className="w-8" />
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="space-y-6 flex-1">
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">Gemini</span>
-              <img src={gemini} alt="gemini" className="w-8" />
-            </a>
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">binance</span>
-              <img src={binance} alt="binance" className="w-8" />
-            </a>
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">crypto.com</span>
-              <img src={crypto} alt="crypto.com" className="w-8" />
-            </a>
+          <div className="md:hidden py-12">
+            <img src={pepe} alt="pepe" className="w-[500px] mx-auto" />
           </div>
-          <div className="space-y-6 flex-1">
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">htx</span>
-              <img src={htx} alt="htx" className="w-8" />
-            </a>
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">bybit</span>
-              <img src={bybit} alt="bybit" className="w-8" />
-            </a>
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">okx</span>
-              <img src={okx} alt="okx" className="w-8" />
-            </a>
-          </div>
-          <div className="space-y-6 flex-1">
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">cb wallet</span>
-              <img src={coinbaseEx} alt="coinbase" className="w-8" />
-            </a>
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">kucoin</span>
-              <img src={kucoin} alt="kucoin" className="w-8" />
-            </a>
-            <a
-              href="#"
-              className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
-            >
-              <span className="font5 text-xl flex-1">uniswap</span>
-              <img src={uniswapEx} alt="uniswap" className="w-8" />
-            </a>
-          </div>
-        </div>
-        <div className="md:hidden py-12">
-          <img src={pepe} alt="pepe" className="w-[500px] mx-auto" />
         </div>
       </div>
+
+      <Divider></Divider>
     </>
   );
 };
