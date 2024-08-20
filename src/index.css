@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "font1";
+  src: url(./assets/fonts/c5749443-93da-4592-b794-42f28d62ef72.woff);
+}
+@font-face {
+  font-family: "font2";
+  src: url(./assets/fonts/e7MeVAyvogMqFwwl61PKhPesZW2xOQ-xsNqO47m55DA.woff2);
+}
+@font-face {
+  font-family: "font3";
+  src: url(./assets/fonts/fIKu7GwZTy_12XzG_jt8eA.woff2);
+}
+@font-face {
+  font-family: "font4";
+  src: url(./assets/fonts/file.woff2);
+}
+@font-face {
+  font-family: "font5";
+  src: url(./assets/fonts/filex.woff2);
+}
+@font-face {
+  font-family: "font6";
+  src: url(./assets/fonts/filez.woff2);
+}
+
+@font-face {
+  font-family: "font7";
+  src: url(./assets/fonts/HelveticaLTW04-Roman.woff2);
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.font1 {
+  font-family: "font1";
+}
+.font2 {
+  font-family: "font2";
+}
+.font3 {
+  font-family: "font3";
+}
+.font4 {
+  font-family: "font4";
+}
+.font5 {
+  font-family: "font5";
+}
+.font6 {
+  font-family: "font6";
+}
+.font7 {
+  font-family: "font7";
+}
