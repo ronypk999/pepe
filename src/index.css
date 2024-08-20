@@ -33,6 +33,7 @@
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
+  @apply text-white;
 }
 .font1 {
   font-family: "font1";
@@ -54,4 +55,8 @@
 }
 .font7 {
   font-family: "font7";
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px black; /* Stroke size and color */
 }

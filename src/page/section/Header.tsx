@@ -33,10 +33,10 @@ const Header: React.FC = () => {
     <>
       <div
         ref={stickyElement}
-        className="max-w-[1600px] lg:mx-auto 
+        className="
    text-[#2a4c75] lg:text-white lg:border-b border-[#376B2E] shadow lg:shadow-lg py-5"
       >
-        <div className="bg-[#4F9843] py-3 lg:py-6 px-3 flex items-center gap-12">
+        <div className="max-w-[1200px] lg:mx-auto  bg-[#4F9843] py-3 lg:py-6 px-3 flex items-center gap-12">
           <div className="flex px-3 justify-between items-center w-full lg:w-fit">
             <div className="">
               <img

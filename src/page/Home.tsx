@@ -1,7 +1,12 @@
 import React from "react";
+import Banner from "./section/home/Banner";
 
 const Home: React.FC = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <Banner></Banner>
+    </>
+  );
 };
 
 export default Home;
