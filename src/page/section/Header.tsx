@@ -7,15 +7,8 @@ import { BiMenu } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 
 const Header: React.FC = () => {
-  const {
-    scrollToFeature,
-    scrollToHealth,
-    scrollToTop,
-    scrollToWhitepaper,
-    scrollToBuy,
-    roadMapRef,
-    scrollTo,
-  } = useInfoContext();
+  const { aboutRef, HowToBuyRef, TokenomicsRef, RoadmapRef, scrollTo } =
+    useInfoContext();
   const [hide, setHide] = useState(true);
 
   const stickyElement = useRef<HTMLDivElement>(null);
@@ -39,11 +32,7 @@ const Header: React.FC = () => {
         <div className="max-w-[1200px] lg:mx-auto  bg-[#4F9843] py-3 lg:py-6 px-3 flex items-center gap-12">
           <div className="flex px-3 justify-between items-center w-full lg:w-fit">
             <div className="">
-              <img
-                src={logo}
-                onClick={scrollToTop}
-                className="w-40 lg:w-64 cursor-pointer"
-              />
+              <img src={logo} className="w-40 lg:w-64 cursor-pointer" />
             </div>
             <div className="lg:hidden">
               <div onClick={menuHandle} className="text-3xl">
@@ -65,21 +54,27 @@ const Header: React.FC = () => {
               </div>
             </div>
             <div className="hidden font5 lg:flex flex-col lg:flex-row items-start gap-8 w-full justify-center">
-              <button className="uppercase" onClick={scrollToHealth}>
+              <button className="uppercase" onClick={() => scrollTo(aboutRef)}>
                 About
               </button>
               <button
                 className="uppercase"
                 onClick={() => {
-                  scrollTo(roadMapRef);
+                  scrollTo(HowToBuyRef);
                 }}
               >
                 How To Buy
               </button>
-              <button className="uppercase" onClick={scrollToWhitepaper}>
+              <button
+                className="uppercase"
+                onClick={() => scrollTo(TokenomicsRef)}
+              >
                 Tokenomics
               </button>
-              <button className="uppercase" onClick={scrollToWhitepaper}>
+              <button
+                className="uppercase"
+                onClick={() => scrollTo(RoadmapRef)}
+              >
                 Roadmap
               </button>
             </div>
@@ -88,7 +83,7 @@ const Header: React.FC = () => {
                 className="uppercase"
                 onClick={() => {
                   menuHandle();
-                  scrollToFeature();
+                  scrollTo(aboutRef);
                 }}
               >
                 About
@@ -97,7 +92,7 @@ const Header: React.FC = () => {
                 className="uppercase"
                 onClick={() => {
                   menuHandle();
-                  scrollToHealth();
+                  scrollTo(HowToBuyRef);
                 }}
               >
                 How To Buy
@@ -106,7 +101,7 @@ const Header: React.FC = () => {
                 className="uppercase"
                 onClick={() => {
                   menuHandle();
-                  scrollTo(roadMapRef);
+                  scrollTo(TokenomicsRef);
                 }}
               >
                 Tokenomics
@@ -115,7 +110,7 @@ const Header: React.FC = () => {
                 className="uppercase"
                 onClick={() => {
                   menuHandle();
-                  scrollToWhitepaper();
+                  scrollTo(RoadmapRef);
                 }}
               >
                 Roadmap
@@ -124,22 +119,19 @@ const Header: React.FC = () => {
 
             <div className="flex font5 flex-col lg:flex-row gap-3 px-6">
               {/* <img src={logo} className="w-40 mx-auto" /> */}
-              <button
-                onClick={scrollToBuy}
-                className="hidden text-xs bg-transparent hover:bg-[#7CB17A] lg:block btn px-6 border-2 border-white rounded-[30px] text-white py-2 uppercase"
+              <a
+                href="#"
+                className="hidden text-xs bg-transparent hover:bg-[#7CB17A] lg:block btn px-6 border-2 border-white rounded-[30px] text-white pt-4 uppercase font5"
               >
                 Buy Now
-              </button>
+              </a>
 
-              <button
-                onClick={() => {
-                  menuHandle();
-                  scrollToBuy();
-                }}
-                className="lg:hidden max-w-48 mx-auto text-xs  bg-transparent hover:bg-[#7CB17A] btn px-12 border-2 border-white rounded-[30px] text-white py-2 uppercase"
+              <a
+                href="#"
+                className="lg:hidden max-w-48 mx-auto text-xs  bg-transparent hover:bg-[#7CB17A] btn px-12 border-2 border-white rounded-[30px] text-white py-2 uppercase font5"
               >
                 Buy Now
-              </button>
+              </a>
             </div>
           </div>
         </div>

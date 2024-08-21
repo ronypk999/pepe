@@ -1,8 +1,10 @@
 import React from "react";
 import pepe from "../../../assets/about/pepe.webp";
 import Divider from "../Divider";
+import { useInfoContext } from "../../../hook/ContextHook";
 
 const About: React.FC = () => {
+  const { aboutRef } = useInfoContext();
   return (
     <>
       <div className="px-6 md:px-12 py-12 max-w-[1200px] mx-auto flex flex-col-reverse md:flex-row gap-6 justify-between items-center">
@@ -10,7 +12,7 @@ const About: React.FC = () => {
           <img src={pepe} alt="pepe great" />
         </div>
 
-        <div className="space-y-8 max-w-lg">
+        <div ref={aboutRef} className="space-y-8 max-w-lg">
           <h1 className="font5 text-3xl md:text-5xl text-stroke  text-start sm:text-center">
             about
           </h1>

@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import twitter from "../../assets/twtttt.webp";
 import logo from "../../assets/pepetitle.webp";
+import { IoIosArrowDropupCircle } from "react-icons/io";
+import { useInfoContext } from "../../hook/ContextHook";
 const Footer: React.FC = () => {
+  const { scrollToTop } = useInfoContext();
+  const [scrolledOverScreenHeight, setScrolledOverScreenHeight] =
+    useState<boolean>(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > window.innerHeight) {
+      setScrolledOverScreenHeight(true);
+    } else {
+      setScrolledOverScreenHeight(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="pt-12 space-y-12">
@@ -27,6 +48,14 @@ const Footer: React.FC = () => {
           </p>
         </div>
       </div>
+      {scrolledOverScreenHeight && (
+        <div className="fixed bottom-6 right-6">
+          <IoIosArrowDropupCircle
+            className="text-5xl cursor-pointer"
+            onClick={scrollToTop}
+          />
+        </div>
+      )}
     </>
   );
 };

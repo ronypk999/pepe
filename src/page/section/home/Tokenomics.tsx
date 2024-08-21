@@ -1,8 +1,10 @@
 import React from "react";
 import Divider from "../Divider";
 import pepe from "../../../assets/tokenomics/pepememe.webp";
+import { useInfoContext } from "../../../hook/ContextHook";
 
 const Tokenomics: React.FC = () => {
+  const { TokenomicsRef } = useInfoContext();
   return (
     <>
       <div className="px-6 md:px-12 py-12 max-w-[1200px] mx-auto">
@@ -13,7 +15,10 @@ const Tokenomics: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between gap-12 md:pt-20">
             <div className="space-y-6">
               <div className="space-y-3">
-                <h2 className="font5 text-xl md:text-2xl text-stroke  text-center">
+                <h2
+                  ref={TokenomicsRef}
+                  className="font5 text-xl md:text-2xl text-stroke  text-center"
+                >
                   Token Supply:
                 </h2>
                 <h2 className="font5 text-xl md:text-2xl text-stroke  text-center break-all">

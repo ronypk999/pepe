@@ -6,8 +6,10 @@ import us from "../../../assets/howtobuy/uniswap.webp";
 import ex from "../../../assets/howtobuy/ex.webp";
 import cow from "../../../assets/howtobuy/pepcow.webp";
 import cowLeft from "../../../assets/howtobuy/cowleft.webp";
+import { useInfoContext } from "../../../hook/ContextHook";
 
 const HowToBuy: React.FC = () => {
+  const { HowToBuyRef } = useInfoContext();
   return (
     <>
       <div className="px-6 md:px-12 py-12 max-w-[1200px] mx-auto">
@@ -21,7 +23,10 @@ const HowToBuy: React.FC = () => {
                 <img src={usb} alt="usb" className="w-full" />
               </div>
               <div className="flex-1 space-y-5 pb-3">
-                <h1 className="font5 text-xl md:text-2xl text-stroke  text-center sm:text-start">
+                <h1
+                  ref={HowToBuyRef}
+                  className="font5 text-xl md:text-2xl text-stroke  text-center sm:text-start"
+                >
                   Create a wallet
                 </h1>
                 <p className="md:text-lg font6 text-stroke-p">
