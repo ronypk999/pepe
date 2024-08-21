@@ -80,3 +80,6 @@ body {
   fill: #fff;
 }
 /*divider css end */
+.footer-box-shadow {
+  box-shadow: #424c46 2px 1px 6px 2px;
+}
