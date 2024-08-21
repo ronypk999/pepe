@@ -64,6 +64,12 @@ body {
   -webkit-text-stroke: 1px black; /* Stroke size and color */
 }
 
+.text-stroke-p {
+  text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px,
+    rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px,
+    rgba(0, 0, 0, 0.498039) 1px -1px 0px;
+}
+
 /*divider css */
 .svg {
   width: calc(100% + 1.3px);
