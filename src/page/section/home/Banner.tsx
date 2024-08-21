@@ -34,14 +34,20 @@ const Banner: React.FC = () => {
         <div className="p-6 md:p-12 max-w-[1200px] mx-auto lg:pt-24">
           <div className="flex justify-center md:p-12 py-12 lg:pt-12">
             <div className="space-y-12">
-              <div className="max-w-2xl space-y-8 text-center md:text-start">
+              <div
+                data-aos="fade-right"
+                className="max-w-2xl space-y-8 text-center md:text-start"
+              >
                 <h1 className="font4 text-7xl text-stroke">$pepe</h1>
                 <p className="text-xl md:text-3xl font6">
                   The most memeable memecoin in existence. The dogs have had
                   their day, it’s time for Pepe to take reign.
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row justify-center gap-6 lg:pt-12">
+              <div
+                data-aos="zoom-in"
+                className="flex flex-col sm:flex-row justify-center gap-6 lg:pt-12"
+              >
                 <div className="flex gap-6 flex-wrap justify-center">
                   <a href="#">
                     <img src={twitter} alt="twitter" />
@@ -66,13 +72,14 @@ const Banner: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div data-aos="fade-left" className="hidden md:block">
               <img src={pepe} alt="pepe" className="w-[500px]" />
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-6">
             <div className="space-y-6 flex-1">
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >
@@ -80,6 +87,7 @@ const Banner: React.FC = () => {
                 <img src={gemini} alt="gemini" className="w-8" />
               </a>
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >
@@ -87,6 +95,7 @@ const Banner: React.FC = () => {
                 <img src={binance} alt="binance" className="w-8" />
               </a>
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >
@@ -96,6 +105,7 @@ const Banner: React.FC = () => {
             </div>
             <div className="space-y-6 flex-1">
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >
@@ -103,6 +113,7 @@ const Banner: React.FC = () => {
                 <img src={htx} alt="htx" className="w-8" />
               </a>
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >
@@ -110,6 +121,7 @@ const Banner: React.FC = () => {
                 <img src={bybit} alt="bybit" className="w-8" />
               </a>
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >
@@ -119,6 +131,7 @@ const Banner: React.FC = () => {
             </div>
             <div className="space-y-6 flex-1">
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >
@@ -126,6 +139,7 @@ const Banner: React.FC = () => {
                 <img src={coinbaseEx} alt="coinbase" className="w-8" />
               </a>
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >
@@ -133,6 +147,7 @@ const Banner: React.FC = () => {
                 <img src={kucoin} alt="kucoin" className="w-8" />
               </a>
               <a
+                data-aos="zoom-in-down"
                 href="#"
                 className="bg-transparent hover:bg-[#7CB17A] btn border-2 border-white rounded-[30px] text-white px-2 py-4 w-full h-fit uppercase"
               >

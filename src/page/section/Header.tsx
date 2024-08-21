@@ -11,27 +11,36 @@ const Header: React.FC = () => {
     useInfoContext();
   const [hide, setHide] = useState(true);
 
-  const stickyElement = useRef<HTMLDivElement>(null);
+  const animateRef = useRef<HTMLDivElement>(null);
 
   const menuHandle = () => {
     if (hide) {
       document.body.style.overflow = "hidden";
+      if (animateRef.current) {
+        animateRef.current.classList.remove("aos-animate");
+      }
+      setTimeout(() => {
+        if (animateRef.current) {
+          animateRef.current.classList.add("aos-animate");
+        }
+      }, 50);
     } else {
       document.body.style.overflow = "";
     }
 
     setHide(!hide);
   };
+
   return (
     <>
       <div
-        ref={stickyElement}
         className="
+     
    text-[#2a4c75] lg:text-white lg:border-b border-[#376B2E] shadow lg:shadow-lg py-5"
       >
         <div className="max-w-[1200px] lg:mx-auto  bg-[#4F9843] py-3 lg:py-6 px-3 flex items-center gap-12">
           <div className="flex px-3 justify-between items-center w-full lg:w-fit">
-            <div className="">
+            <div className="" data-aos="flip-right">
               <img src={logo} className="w-40 lg:w-64 cursor-pointer" />
             </div>
             <div className="lg:hidden">
@@ -43,7 +52,7 @@ const Header: React.FC = () => {
           <div
             className={`${
               hide && "hidden"
-            } absolute bg-[#4F9843] h-screen w-screen nav lg:h-fit p-3 space-y-12 lg:space-y-0 lg:p-0 right-0 top-0 lg:static lg:flex items-center w-full justify-around lg:justify-between lg:px-6 font-medium bg-md-none`}
+            } absolute z-10 bg-[#4F9843] h-screen w-screen nav lg:h-fit p-3 space-y-12 lg:space-y-0 lg:p-0 right-0 top-0 lg:static lg:flex items-center w-full justify-around lg:justify-between lg:px-6 font-medium bg-md-none`}
             onClick={(e) => {
               e.stopPropagation();
             }}
@@ -53,7 +62,10 @@ const Header: React.FC = () => {
                 <IoMdClose />
               </div>
             </div>
-            <div className="hidden font5 lg:flex flex-col lg:flex-row items-start gap-8 w-full justify-center">
+            <div
+              data-aos="fade-up"
+              className="hidden font5 lg:flex flex-col lg:flex-row items-start gap-8 w-full justify-center"
+            >
               <button className="uppercase" onClick={() => scrollTo(aboutRef)}>
                 About
               </button>
@@ -78,7 +90,11 @@ const Header: React.FC = () => {
                 Roadmap
               </button>
             </div>
-            <div className="lg:hidden text-white font5 flex flex-col lg:flex-row items-center gap-6 uppercase">
+            <div
+              data-aos="fade-down"
+              ref={animateRef}
+              className="lg:hidden text-white font5 flex flex-col lg:flex-row items-center gap-6 uppercase"
+            >
               <button
                 className="uppercase"
                 onClick={() => {
@@ -117,7 +133,10 @@ const Header: React.FC = () => {
               </button>
             </div>
 
-            <div className="flex font5 flex-col lg:flex-row gap-3 px-6">
+            <div
+              data-aos="flip-left"
+              className="flex font5 flex-col lg:flex-row gap-3 px-6"
+            >
               {/* <img src={logo} className="w-40 mx-auto" /> */}
               <a
                 href="#"

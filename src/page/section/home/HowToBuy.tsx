@@ -29,7 +29,10 @@ const HowToBuy: React.FC = () => {
                 >
                   Create a wallet
                 </h1>
-                <p className="md:text-lg font6 text-stroke-p">
+                <p
+                  data-aos="fade-right"
+                  className="md:text-lg font6 text-stroke-p"
+                >
                   download metamask or your wallet of choice from the app store
                   or google play store for free. Desktop users, download the
                   google chrome extension by going to metamask.io.
@@ -44,7 +47,10 @@ const HowToBuy: React.FC = () => {
                 <h1 className="font5 text-xl md:text-2xl text-stroke  text-center sm:text-start">
                   Get Some ETH
                 </h1>
-                <p className="md:text-lg font6 text-stroke-p">
+                <p
+                  data-aos="fade-right"
+                  className="md:text-lg font6 text-stroke-p"
+                >
                   have ETH in your wallet to switch to $PEPE. If you don’t have
                   any ETH, you can buy directly on metamask, transfer from
                   another wallet, or buy on another exchange and send it to your
@@ -60,7 +66,10 @@ const HowToBuy: React.FC = () => {
                 <h1 className="font5 text-xl md:text-2xl text-stroke  text-center sm:text-start">
                   Go to Uniswap
                 </h1>
-                <p className="md:text-lg font6 text-stroke-p">
+                <p
+                  data-aos="fade-right"
+                  className="md:text-lg font6 text-stroke-p"
+                >
                   Connect to Uniswap. Go to app.uniswap.org in google chrome or
                   on the browser inside your Metamask app. Connect your wallet.
                   Paste the $PEPE token address into Uniswap, select Pepe, and
@@ -77,7 +86,10 @@ const HowToBuy: React.FC = () => {
                 <h1 className="font5 text-xl md:text-2xl text-stroke  text-center sm:text-start">
                   Switch ETH for $PEPE
                 </h1>
-                <p className="md:text-lg font6 text-stroke-p">
+                <p
+                  data-aos="fade-right"
+                  className="md:text-lg font6 text-stroke-p"
+                >
                   switch ETH for $PEPE. We have ZERO taxes so you don’t need to
                   worry about buying with a specific slippage, although you may
                   need to use slippage during times of market volatility.

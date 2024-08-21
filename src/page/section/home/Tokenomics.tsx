@@ -14,7 +14,7 @@ const Tokenomics: React.FC = () => {
           </h1>
           <div className="flex flex-col md:flex-row justify-between gap-12 md:pt-20">
             <div className="space-y-6">
-              <div className="space-y-3">
+              <div data-aos="zoom-in-right" className="space-y-3">
                 <h2
                   ref={TokenomicsRef}
                   className="font5 text-xl md:text-2xl text-stroke  text-center"
@@ -25,7 +25,10 @@ const Tokenomics: React.FC = () => {
                   420,690,000,000,000
                 </h2>
               </div>
-              <div className="pt-6 space-y-6 md:space-y-8">
+              <div
+                data-aos="zoom-in-left"
+                className="pt-6 space-y-6 md:space-y-8"
+              >
                 <div className="bg-[#274B21] p-6 md:p-8 rounded-bl-[2rem] rounded-tr-[2rem] border-2 border-white">
                   <div className="space-y-8 pb-3">
                     <p className="md:text-xl font6 text-stroke-p">
@@ -38,7 +41,7 @@ const Tokenomics: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="pt-12">
+            <div data-aos="fade-up-left" className="pt-12">
               <img src={pepe} alt="pepe meme" className="w-96 mx-auto" />
             </div>
           </div>

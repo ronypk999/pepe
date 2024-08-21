@@ -26,17 +26,22 @@ const Footer: React.FC = () => {
   return (
     <>
       <div className="pt-12 space-y-12">
-        <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-12">
-          <img src={twitter} alt="twitter" />
+        <div
+          data-aos="zoom-in-down"
+          className="flex flex-col-reverse md:flex-row justify-center items-center gap-12"
+        >
+          <a href="#">
+            <img src={twitter} alt="twitter" />
+          </a>
           <img src={logo} alt="logo" />
         </div>
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <p className="md:text-lg font6 text-stroke-p">
+          <p data-aos="fade-right" className="md:text-lg font6 text-stroke-p">
             $pepe coin has no association with Matt Furie or his creation Pepe
             the Frog. This token is simply paying homage to a meme we all love
             and recognize.
           </p>
-          <p className="md:text-lg font6 text-stroke-p">
+          <p data-aos="fade-left" className="md:text-lg font6 text-stroke-p">
             $PEPE is a meme coin with no intrinsic value or expectation of
             financial return. There is no formal team or roadmap. the coin is
             completely useless and for entertainment purposes only.
